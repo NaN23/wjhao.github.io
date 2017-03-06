@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   $('a.blog-button').click(function() {
-    if ($('.panel-cover').hasClass('panel-cover--collapsed'))  return;
+    if ($('.panel-cover').hasClass('panel-cover--collapsed')) return;
     currentWidth = $('.panel-cover').width();
     $('.panel-cover').addClass('animated panel-cover--collapsed slideInLeft');
     $('.content-wrapper').addClass('animated slideInLeft');
