@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      Hexo搭建博客基础教程 | 『NaN』 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="NaN">
+    
+    
+
+    <meta name="description" content="起因&amp;amp;面对对象前一段时间，经过网上资料学习，自己通过Hexo也搭起了自己的第一个博客，虽然简陋一些，但面对一些和我一样刚入门的同学，我觉得还是有必要整理一份入门教程，方便大家学习交流，顺便熟悉一下Markdown的写法。此基础教程面对使用Windows操作系统的入门者使用，教程种出现的错误，dalao们还请多多请教！谢谢啦">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo搭建博客基础教程 | 『NaN』">
+<meta property="og:url" content="http://yoursite.com/2017/03/11/createBlog/index.html">
+<meta property="og:site_name" content="『NaN』">
+<meta property="og:description" content="起因&amp;amp;面对对象前一段时间，经过网上资料学习，自己通过Hexo也搭起了自己的第一个博客，虽然简陋一些，但面对一些和我一样刚入门的同学，我觉得还是有必要整理一份入门教程，方便大家学习交流，顺便熟悉一下Markdown的写法。此基础教程面对使用Windows操作系统的入门者使用，教程种出现的错误，dalao们还请多多请教！谢谢啦">
+<meta property="og:image" content="http://omdp3txq2.bkt.clouddn.com/33.png">
+<meta property="og:image" content="http://omdp3txq2.bkt.clouddn.com/444.png">
+<meta property="og:updated_time" content="2017-03-12T03:52:04.747Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo搭建博客基础教程 | 『NaN』">
+<meta name="twitter:description" content="起因&amp;amp;面对对象前一段时间，经过网上资料学习，自己通过Hexo也搭起了自己的第一个博客，虽然简陋一些，但面对一些和我一样刚入门的同学，我觉得还是有必要整理一份入门教程，方便大家学习交流，顺便熟悉一下Markdown的写法。此基础教程面对使用Windows操作系统的入门者使用，教程种出现的错误，dalao们还请多多请教！谢谢啦">
+<meta name="twitter:image" content="http://omdp3txq2.bkt.clouddn.com/33.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="\favicon.ico">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main ">
+
+  
+    <div class="panel-main__inner panel-inverted ">
+    <div class="panel-main__content ">
+
+        
+        <a href="/" title="link to homepage for 『NaN』"><img src="\avatar.png" width="80" alt="『NaN』 logo" class="panel-cover__logo logo" /></a>
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">『NaN』</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          “你是无意穿堂风，却偏偏引山洪”
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">文章</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+</br>
+
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+    
+      <!-- Github -->
+      <li class="navigation__item">
+        <a href="https://github.com/wjhao" title="Huno on GitHub" target="_blank">
+          <i class='icon icon-social-github'></i>
+          <span class="label">GitHub</span>
+        </a>
+      </li>
+    
+
+    
+     <!-- Mail --> 
+    <li class="navigation__item">
+      <a href="mailto:ianoter@hotmail.com" title="Mail"
+      target="_blank">
+        <i class='icon icon-mail'></i>
+        <span class="label">Mail</span>
+      </a>
+    </li>
+    
+
+    <!-- China social icon -->
+    <!--
+    
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-douban'></i>
+          <span class="label">Douban</span>
+        </a>
+      </li>
+
+      <li class="navigation__item">
+        <a href="" title="">
+          <i class='icon cs-icon-weibo'></i>
+          <span class="label">Weibo</span>
+        </a>
+      </li>
+
+    -->
+
+
+
+  </ul>
+</nav>
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">Hexo搭建博客基础教程</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-03-11" class="post-meta__date date">2017-03-11</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+            <font class="categories">
+            &#8226; 分类:
+            <a class="categories-link" href="/categories/技术/">技术</a>
+            </font>
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/Hexo/">Hexo</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h2 id="起因-amp-面对对象"><a href="#起因-amp-面对对象" class="headerlink" title="起因&amp;面对对象"></a>起因&amp;面对对象</h2><p>前一段时间，经过网上资料学习，自己通过<strong>Hexo</strong>也搭起了自己的第一个博客，虽然简陋一些，但面对一些和我一样刚入门的同学，我觉得还是有必要整理一份入门教程，方便大家学习交流，顺便熟悉一下Markdown的写法。此基础教程面对使用<font color="red"><strong>Windows操作系统</strong></font>的<font color="red"><strong>入门者</strong></font>使用，教程种出现的错误，dalao们还请多多请教！谢谢啦<br><a id="more"></a></p>
+<h2 id="部署环境"><a href="#部署环境" class="headerlink" title="部署环境"></a>部署环境</h2><p>首先，需要下载并安装<a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>（点击下载），如果你想了解更多关于Git的使用方法，可以参考<a href="http://blog.csdn.net/v123411739/article/details/44071059/" target="_blank" rel="external">【Github教程】史上最全github使用方法：github入门到精通</a>,相信会给你带来一定帮助。<br>其次，因为Hexo是一款Node.js的静态博客框架，所以我们还需要安装<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>（点击下载）</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>先介绍几个常用的命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">hexo g 用于生成静态文件</div><div class="line">hexo s 启动服务器，可以在本地预览</div><div class="line">hexo d 将本地文件发布到github上</div></pre></td></tr></table></figure></p>
+<p>首先，<strong>安装Hexo</strong><br>鼠标右键任意空白地方选择菜单中的<strong>Git Bash</strong>选项，输入一下命令（命令窗口自带$，这里不再重复添加）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure></p>
+<p>PS:如果在过程中遇到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found:github</div></pre></td></tr></table></figure></p>
+<p>这样的问题，可以使用如下命令解决<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>接下来选择放置Hexo文件夹的位置，例如我选择的地址为<strong>E:\hexo</strong>最好不要放在中文路径下），创建好文件夹后，进入文件夹，右键选择Git Bash，输入一下命令即可下载搭建博客所需文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>安装依赖包<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
+<p>这时我们可以在<strong>E:\hexo</strong>中右键选择Git Bash输入一下命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>打开浏览器访问<strong><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></strong>，此时一个博客展现在你的眼前，但是这只是在本地预览，别人无法查看。</p>
+<h2 id="注册Github"><a href="#注册Github" class="headerlink" title="注册Github"></a>注册Github</h2><p>已有github账户的同学可以跳过，没有账号的同学可以<a href="https://github.com/" target="_blank" rel="external">点击这里</a>注册，并记住自己的邮箱，用户名与密码。</p>
+<h2 id="创建repository"><a href="#创建repository" class="headerlink" title="创建repository"></a>创建repository</h2><p>repository作为一个仓库，是用来放置你的所有代码文件的。首先，我们需要登陆之前注册好的<a href="https://github.com/" target="_blank" rel="external">github</a>,进入个人页面，点击<strong>Respostories</strong>，然后选择右面的<strong>New</strong>，创建一个新的Respository，如下图所示<img src="http://omdp3txq2.bkt.clouddn.com/33.png" alt=""><br>创建时，需要填写Respository，这个名字必须为<strong>yourname.github.io</strong>，例如我自己的是<strong>wjhao.github.io</strong>填写完信息后，点击页面下方的<strong>Create repository</strong>即可完成创建</p>
+<h2 id="部署本地文件到github"><a href="#部署本地文件到github" class="headerlink" title="部署本地文件到github"></a>部署本地文件到github</h2><p>编辑<strong>E:\hexo下</strong>的<strong>_config.yml</strong>文件，可以使用sumbile，Notepad++等软件。在_config.yml文件的最下方，添加下图所示命令，其中<strong>repository</strong>中<strong>第一个wjhao</strong>处填写你自己的github用户名，<strong>第二个wjhao</strong>处填写你刚刚新建的repository名。<br><font color="red"><strong>PS：hexo所有配置文件中的”:”后面都需要留一个空格</strong></font>，如果遇到ERROR Deployer not fonud:github问题请参考前文的解决方法。<img src="http://omdp3txq2.bkt.clouddn.com/444.png" alt=""><br>配置好并保存此文件，执行下列命令以部署到自己的Github。在部署前你还需要配置SSH，可以参考<a href="http://www.cnblogs.com/yehui-mmd/p/5962254.html" target="_blank" rel="external">github-如何设置SSH Key</a>，已经配置好的可以跳过这一步。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>执行第二个命令后，会要求你输入github用户名与密码，输入密码时不会显示，直接输入即可，输入完成后回车结束。<br>到这里，博客已经成功搭建起来，在浏览器地址栏输入<strong>wjhao（你刚刚注册的repository的名字）.github.io</strong>就可以看到自己的博客了，第一次访问可能要等<10分钟才可以访问.针对每次上传git都需要输入账号密码问题，可以参考这个<a href="http://www.xuexila.com/diannao/xitong/linux/647409.html">链接。</10分钟才可以访问.针对每次上传git都需要输入账号密码问题，可以参考这个<a></p>
+<h2 id="配置hexo"><a href="#配置hexo" class="headerlink" title="配置hexo"></a>配置hexo</h2><p>hexo里最为常用的2个配置文件一个为<strong>hexo_config.yml</strong>，另一个为<strong>hexo\themes\xxx_config.yml</strong>（xxx为你使用的主题名字，默认为landscape）。关于主题，入门者可以在网络上搜到很多hexo主题，可以挑选自己喜欢的，有能力者可以自己二次修改，或者自己创建一个主题。<br>修改主题的方式：将主题clone到本地后，将主题的文件夹放置到<strong>…\hexo\themes</strong>中，将<strong>…\hexo_config.yml</strong>中theme后面的名字改为你的主题文件夹名字即可。<br>以下为…\hexo_config.yml配置文件。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div></pre></td><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: https://hexo.io/docs/configuration.html</div><div class="line">## Source: https://github.com/hexojs/hexo/</div><div class="line"></div><div class="line"># Site</div><div class="line">title: 『NaN』    #博客名</div><div class="line">subtitle: “你是无意穿堂风，却偏偏引山洪”    #副标题</div><div class="line">description: 个人博客    #用于搜索，无明显表现</div><div class="line">author: NaN		 #作者</div><div class="line">language: zh-CN  #语言</div><div class="line">timezone:		 #时区，一般不填写</div><div class="line"></div><div class="line"># URL      默认即可</div><div class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</div><div class="line">url: http://yoursite.com</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div><div class="line"></div><div class="line"># Directory    默认即可</div><div class="line">source_dir: source</div><div class="line">public_dir: public</div><div class="line">tag_dir: tags</div><div class="line">archive_dir: archives</div><div class="line">category_dir: categories</div><div class="line">code_dir: downloads/code</div><div class="line">i18n_dir: :lang</div><div class="line">skip_render:</div><div class="line"></div><div class="line"># Writing    文章布局 默认即可</div><div class="line">new_post_name: :title.md # File name of new posts</div><div class="line">default_layout: post</div><div class="line">titlecase: false # Transform title into titlecase</div><div class="line">external_link: true # Open external links in new tab</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">post_asset_folder: false</div><div class="line">relative_link: false</div><div class="line">future: true</div><div class="line">highlight:</div><div class="line">  enable: true</div><div class="line">  line_number: true</div><div class="line">  auto_detect: false</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag     默认即可</div><div class="line">default_category: uncategorized</div><div class="line">category_map:</div><div class="line">tag_map:</div><div class="line"></div><div class="line"></div><div class="line"># Social     主题中的社交方式展示，根据主题配置</div><div class="line">social:</div><div class="line">  github: wjhao</div><div class="line">  mail: ianoter@hotmail.com</div><div class="line"></div><div class="line"># Duoshuo    博客中的评论系统，根据主题配置</div><div class="line">duoshuo_shortname: wjhao</div><div class="line"></div><div class="line"></div><div class="line"># Date / Time format    默认即可</div><div class="line">## Hexo uses Moment.js to parse and display date</div><div class="line">## You can customize the date format as defined in</div><div class="line">## http://momentjs.com/docs/#/displaying/format/</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line"># Pagination</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 10</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Extensions    插件，暂时不配置</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: huno-master</div><div class="line"></div><div class="line">feed:    #之后配置RSS会用到，使用如下配置即可</div><div class="line">	type: atom</div><div class="line">	path: atom.xml</div><div class="line">	limit: 20</div><div class="line"></div><div class="line"></div><div class="line"># Deployment    部署github用，已配置完成</div><div class="line">## Docs: https://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: http://github.com/wjhao/wjhao.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>配置完成后执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>打开<strong><a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></strong>本地查看效果。<br>关于theme的_config.yml文件，在主题作者的github中会有配置说明，因格式不统一，这所以里不作说明。</p>
+<h2 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h2><p>首先，在Git Bash中执行命令：<strong>hexo new “my new post”</strong><br>其次，在…\hexo\source_post中打开my-new-post.md，打开方式可以选择记事本。因为使用的是Markdown，也可以下载专用的markdown编辑器。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">title: my new post #可以改成任意中文</div><div class="line">date: 2015-04-08 22:56:29 #发表日期，一般不改动</div><div class="line">categories: blog #文章文类</div><div class="line">tags: [博客，文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</div><div class="line">---</div><div class="line">#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</div><div class="line">&lt;!--more--&gt;#在&lt;!--more--&gt;之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。</div></pre></td></tr></table></figure></p>
+<p>文章编辑完成后，可以使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>在本地预览<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>
+<p>用于上传到你自己的博客中进行访问查看。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这是我第一篇和技术挂点边的东西2333，我也是一名初学者，很多东西也不是很懂，希望我写的这篇文章可以给和我一样刚刚入门的新人一点点帮助，大家互相交流互相学习。</p>
+
+  </section>
+
+  
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2017/03/11/createBlog/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"wjhao"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2016-2017 ♥ 『NaN』 | 主题<a href="https://github.com/someus/huno">Huno</a></span> 
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d195d461254d22be4ae1331a7b1a29dd";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
